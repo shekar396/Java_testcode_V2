@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webapps-v2
+  labels:
+    app: my-webapps
+    version: "2.0"
+spec:
+  containers:
+    - name: webapps-container
+      image: dpthub9/chatbot:2.0
